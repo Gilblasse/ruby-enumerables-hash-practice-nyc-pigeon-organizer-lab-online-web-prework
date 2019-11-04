@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
 
 			[:color,:gender,:lives].each do |key|
 				data[key].map do |k,v| 
-					[k => v.each{|val| h[name][key] << k if val == name}]
+					[k => v.each{|val| h[name][key] << k.to_s if val == name}]
 				end
 			end
 			
