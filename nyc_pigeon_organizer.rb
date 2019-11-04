@@ -15,7 +15,7 @@ def nyc_pigeon_organizer(data)
 					[k => v.each{|val| h[name][key] << k.to_s if val == name}]
 				end
 			end
-			
+		
 		end
 
 	pigeon_data
